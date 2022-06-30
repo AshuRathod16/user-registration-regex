@@ -20,7 +20,7 @@ public class UserRegistration {
         String mobileNumber = scanner.nextLine();
         System.out.println(Pattern.matches("[+]91 [6-9]\\d{9}", mobileNumber));
         System.out.println("Enter Password1: ");
-        String password1 = scanner.nextLine();
+        String password1 = scanner.next();
         System.out.println(Pattern.matches("[a-z A-Z]{8,}", password1));
     }
 }
