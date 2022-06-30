@@ -28,5 +28,8 @@ public class UserRegistration {
         System.out.println("Enter Password3: ");
         String password3 = scanner.nextLine();
         System.out.println(Pattern.matches("[A-Z][a-z A-Z 0-9]{8,}", password3));
+        System.out.println("Enter Password4: ");
+        String password4 = scanner.nextLine();
+        System.out.println(Pattern.matches("(?=.*[A-Z])(?=.*\\d)(?=.*[$&+,:;=?@#|'<>.-^*()%!])[a-z A-Z \\d $&+,:;=?@#|'<>.-^*()%!]{8,}", password4));
     }
 }
